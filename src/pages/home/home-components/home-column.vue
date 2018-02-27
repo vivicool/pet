@@ -1,18 +1,16 @@
 <template>
-    <div>
-        <div class="bgb30 pa b100 r0 l0">
-            <div class="container">
-                <div class="tac row">
-                    <div class="col-sm-10ths" v-for="(r,index) in val" :key="index">
-                        <div class="bghr43 ptb10 tran" >
-                            <a href="" target="_blank" ><i class="iconfont crw fs32" v-html="r.tubiao"></i></a>
-                        <div class="mt5" ><a href="#" target="_blank" class=" crw fs16 crhrw">{{ r.message }}</a></div>
+            <div class="pa l0 r0 b100 bgb30 column">
+                <div class="container">
+                    <div class="tac row">
+                        <div class="col-sm-10ths" v-for="(r,index) in val" :key="index">
+                            <div class="bghr43 ptb10 tran" >
+                                <a href="" target="_blank" class="crw" ><i class="iconfont crw fs32" v-html="r.tubiao"></i></a>
+                            <div class="mt5" ><a href="#" target="_blank" class=" crw fs16 crhrw">{{ r.message }}</a></div>
+                            </div>
                         </div>
-                    </div>
-                </div> 
-            </div>
-        </div>    
-    </div>
+                    </div> 
+                </div>
+            </div>             
 </template>
 
 <script>
@@ -65,6 +63,16 @@
         }
     }
 </script>
+
+<style>
+/*栏目栅栏*/
+@media(max-width:768px) {
+    .column{
+        display:none;
+    }
+}
+
+</style>
 
 
 

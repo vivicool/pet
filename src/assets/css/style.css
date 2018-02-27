@@ -291,17 +291,6 @@
     width:70px
 }
 
-/*搜索框*/
-
-.searchbox{
-    top:40%;
-}
-
-@media(max-width:768px){
-    .searchbox{
-        top:30%;
-    }
-}
 
 
 
@@ -347,7 +336,7 @@
 /*lanmu div top调整*/
 
 .containerbox{
-    height:1000px;top:480px;z-index:1;
+    top:480px;z-index:1;
 }
 
 @media(max-width:768px){

@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="container pf w100 oh banner"  @click="inputclick"   style="height:580px;z-index:0;"  :class="{'green':isA,'isgreen':!isA}">
-            <video loop class="videoBanner">
+            <video autoplay loop class="videoBanner">
                 <source src="../../../assets/img/cat1.mp4" type="video/mp4">
             </video>
-            <div class="pa l0 t0 wh100"></div>   
+           
             <!--search-->
             <div class="row pa l0 r0 b0 searchbox">
                 <div class="col-sm-3"></div>
@@ -15,7 +15,7 @@
                                 <form action="#" method="get">
                                     <input type="search" class="br1000 brfs0 bgw  dnbtnfocus  w100 p10 ti5 searchBox" placeholder="请输入关键字搜索" v-model="value">
                                     <!--搜索下拉提示框-->
-                                    <ul class="bg0 w100 dropdownBox pa dnhr bghr1all plr20all ptb12all cp cr11-a keyword dn" style="z-index:2">
+                                    <ul class="bg0 w100 dropdownBox pa dnhr bghr1all plr20all ptb12all cp cr11-a keyword dn"  style="z-index:999999">
                                         <li v-for="(item,index) in items" :key="index">
                                             <a target="_blank" class="flall">
                                                 <div class="tno"> {{ value }}</div>
@@ -48,8 +48,8 @@
                items:[
                 { message:'搜售宠'},
                 { message:'搜商品'},
-                { message:'搜服务'},
-                { message:'搜知识'}
+               /* { message:'搜服务'},
+                { message:'搜知识'}*/
              ],                
             }
         },
@@ -109,16 +109,12 @@
 }
 
 /*搜索框*/
-
 .searchbox{
-    top:40%;
+    top:30%;
 }
 
-@media(max-width:768px){
-    .searchbox{
-        top:30%;
-    }
-}
+
+
 
 /*搜索关键词*/
 

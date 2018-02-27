@@ -3,7 +3,7 @@
         <div id="app">
             <HomeBar></HomeBar>
             <div class="pr containerbox">
-                <div class="bgw box">
+                <div class="bgw box pr">
                     <router-view></router-view>
                     <Footers></Footers>
                     <CopyRight></CopyRight>
