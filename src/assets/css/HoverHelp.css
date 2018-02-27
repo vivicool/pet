@@ -1,0 +1,213 @@
+/*----------文本----------*/
+.hrt1::before, .hrt1::after {display:inline-block;opacity:0;transition:all .3s}
+.hrt1::before {content:'['}
+.hrt1::after {content:']'}
+.hrt1:hover:before{margin-right:10px;opacity:1}
+.hrt1:hover:after{margin-left:10px;opacity:1}
+
+/*----------3D----------*/
+.hr3d1,.hr3d2,.hr3d3,.hr3d4,.hr3d5,.hr3d6,.hr3d7,.hr3d8,.hr3d9,.hr3d10{transition:transform 1s}
+
+.hr3d1:hover{transform:rotateY(360deg)}
+.hr3d2:hover{transform:rotateX(360deg)}
+.hr3d3:hover{transform:rotate(360deg)}
+
+/*----------2D----------*/
+.hr2d1,.hr2d2,.hr2d5,.hr2d6,.hr2d7,.hr2d8,.hr2d9,.hr2d10,.hr2d11{transition:transform .2s}
+
+.hr2d1:hover{transform:scale(1.1)}
+
+.hr2d2:hover { transform:scale(.9)}
+ 
+ @keyframes hr2d3 {
+ 50% {transform:scale(1.2)}
+ 100% {transform:scale(1)}
+}
+.hr2d3:hover{animation:hr2d3 .3s}
+
+@keyframes hr2d5 {
+ 50% {transform:scale(.8)}
+ 100% {transform:scale(1)}
+}
+.hr2d5:hover{animation:hr2d5 .3s}
+.hr2d8:hover{transform:translateX(-5px)}
+.hr2d9:hover{transform:translateX(5px)}
+.hr2d10:hover{transform:translateY(-5px)}
+
+.hr2d11:hover { transform:translateY(5px)}
+
+@keyframes hr2d12{
+ 50%{transform:translateY(-3px)}
+ 100%{transform:translateY(0px)}
+}
+.hr2d12:hover{animation:hr2d12 infinite .3s}
+
+@keyframes hr2d13{
+ 50%{transform:translateY(3px)}
+ 100%{transform:translateY(0px)}
+}
+.hr2d13:hover{animation:hr2d13 infinite .3s}
+
+.hr2d14:hover { transform:skew(-10deg)}
+
+.hr2d15:hover { transform:skew(10deg)}
+
+@keyframes hr2d16{
+16.65% {transform:translateY(8px)}
+ 33.3% {transform:translateY(-6px)}
+ 49.95% {transform:translateY(4px)}
+ 66.6% {transform:translateY(-2px)}
+ 83.25% {transform:translateY(1px)}
+ 100% {transform:translateY(0)}
+}
+.hr2d16:hover { animation:hr2d16 .5s 1}
+
+@keyframes hr2d17 {
+16.65% {transform:translateX(8px)}
+ 33.3% {transform:translateX(-6px)}
+ 49.95% {transform:translateX(4px)}
+ 66.6% {transform:translateX(-2px)}
+ 83.25% {transform:translateX(1px)}
+ 100% {transform:translateX(0)}
+}
+.hr2d17:hover { animation:hr2d17 .5s 1}
+ 
+ @keyframes hr2d18 {
+16.65% {transform:skew(-12deg)}
+33.3% {transform:skew(10deg)}
+49.95% {transform:skew(-6deg)}
+66.6% {transform:skew(4deg)}
+83.25% {transform:skew(-2deg)}
+100% {transform:skew(0)}
+}
+.hr2d18 { transform-origin:0 100%}
+.hr2d18:hover {animation:hr2d18 .5s 1}
+
+@keyframes hr2d19{
+ 16.65% {transform:skew(-12deg)}
+ 33.3% {transform:skew(10deg)}
+ 49.95% {transform:skew(-6deg)}
+ 66.6% {transform:skew(4deg)}
+ 83.25% {transform:skew(-2deg)}
+ 100% {transform:skew(0)}
+}
+.hr2d19{ transform-origin:100% 0}
+.hr2d19:hover { animation:hr2d19 .5s 1}
+
+@keyframes hr2d20{
+25%{transform:translateX(4px) rotate(3deg)}
+50%{transform:translateX(-4px) rotate(-3deg)}
+75%{transform:translateX(2px) rotate(1)}
+100%{transform:translateX(-2px) rotate(-1)}}
+.hr2d20:hover{animation:hr2d20 0.1s 3}
+
+@keyframes hr2d21{
+16.65%{transform:skew(-12deg)}
+33.3%{transform:skew(10deg)}
+49.95%{transform:skew(-6deg)}
+66.6%{transform:skew(4deg)}
+83.25%{transform:skew(-2deg)}
+100%{transform:skew(0)}}
+.hr2d21:hover{animation:hr2d21 1s 1}
+
+@keyframes hr2d22{
+16.65%{transform:translate(8px,8px)}
+33.3%{transform:translate(-6px,-6px)}
+49.95%{transform:translate(4px,4px)}
+66.6%{transform:translate(-2px,-2px)}
+83.25%{transform:translate(1px,1px)}
+100%{transform:translate(0,0)}}
+.hr2d22:hover{animation:hr2d22 1s 1}
+
+@keyframes hr2d23{
+16.65%{transform:translate(8px,-8px)}
+33.3%{transform:translate(-6px,6px)}
+49.95%{transform:translate(4px,-4px)}
+66.6%{transform:translate(-2px,2px)}
+83.25%{transform:translate(1px,-1px)}
+100%{transform:translate(0,0)}}
+.hr2d23:hover{animation:hr2d23 1s 1}
+
+/*----------背景----------*/
+.hrbg1:after,.hrbg2:after,.hrbg3:after,.hrbg4:after,.hrbg5:after,.hrbg10:before,.hrbg11:before,.hrbg18:after,.hrbr10:before,.hrbr11:before,.hrbr12:before,.hrbr13:before,.hrbr14:before,.hrbr15:before,.hrbr17:before,.hrbr18:before,.hrbr16:before,.hrbr25:before,.hrbr26:before,.hrbr27:before,.hrbr28:before,.hrbr29:before,.hrbr30:before,.hrbr31:before{content:'';position:absolute;top:0px;left:0px;background-color:rgba(255,255,255,.15)}
+
+.hrbg1:after{opacity:0;width:100%;height:100%}
+.hrbg1:hover:after{opacity:1}
+
+.hrbg2:after,.hrbg3:after{height:100%;width:0%}
+@keyframes hrbg2{
+	0%{width:0%}
+	30%{width:100%}
+	45%{width:80%}
+	60%{width:100%}
+	85%{width:90%}
+	100%{width:100%}
+	}
+.hrbg3:after{left:auto;right:0px}
+.hrbg2:hover:after,.hrbg3:hover:after{animation:hrbg2 .4s 1;width:100%}
+
+
+.hrbg4:after,.hrbg5:after{height:0%;width:100%}
+@keyframes hrbg4{
+	0%{height:0%}
+	30%{height:100%}
+	45%{height:80%}
+	60%{height:100%}
+	85%{height:90%}
+	100%{height:100%}
+	}
+.hrbg5:after{height:0%;bottom:0px;top:auto}
+.hrbg4:hover:after,.hrbg5:hover:after{animation:hrbg4 .4s 1;height:100%}
+
+
+.hrbg10,.hrbg11{transform:translateZ(0);overflow:hidden;}
+.hrbg10:before,.hrbg11:before{z-index:-1;right:0;bottom:0;transform:scale(0);border-radius:100%;transition:all .7s}
+.hrbg11:before{border-radius:0em}
+.hrbg10:hover:before,.hrbg11:hover:before{transform:scale(2)}
+
+.hrbg18{overflow:hidden;position:relative}
+.hrbg18{z-index:20}
+.hrbg18:after {background:rgba(255,255,255,.2);height:300%;left:-150%;top:-50%;transform:rotate(35deg);width:50px;z-index:-10}
+.hrbg18:hover:after { left:130%;}
+
+/*----------边框----------*/
+.hrbr1:hover{box-shadow:inset 0 0 0 4px rgba(255,255,255,.2)}
+.hrbr2:hover{box-shadow:0 0 0 4px rgba(255,255,255,.2)}
+
+.hrbr3,.hrbr4,.hrbr5{position:relative}
+.hrbr3:before,.hrbr4:before,.hrbr5:before{ content:'';position:absolute;border:4px solid rgba(255,255,255,.2);opacity:0}
+
+.hrbr3:before {top:4px;left:4px;right:4px;bottom:4px;}
+.hrbr3:hover:before {opacity:1}
+
+.hrbr4:before {top:0;left:0;right:0;bottom:0;}
+.hrbr4:hover:before {top:-8px;right:-8px;left:-8px;bottom:-8px;opacity:1}
+
+.hrbr5:before {top:-16px;right:-16px;left:-16px;bottom:-16px;}
+.hrbr5:hover:before {top:0px;right:0px;bottom:0px;left:0px;opacity:1}
+
+.hrbr7:hover{border-radius:.5em}
+.hrbr8:hover{border-radius:.5em .5em 0em 0em}
+.hrbr9:hover{border-radius:0em 0em .5em .5em}
+.hrbr19:hover{border-radius:0em .5em .5em 0em}
+.hrbr20:hover{border-radius:.5em 0em 0em .5em}
+.hrbr6:hover{border-radius:50em}
+.hrbr21:hover{border-radius:50em 50em 0em 0em}
+.hrbr22:hover{border-radius:0em 0em 50em 50em}
+.hrbr23:hover{border-radius:0em 50em 50em 0em}
+.hrbr24:hover{border-radius:50em 0em 0em 50em}
+.hrbr10:before,.hrbr11:before,.hrbr12:before,.hrbr13:before,.hrbr14:before,.hrbr15:before,.hrbr17:before,.hrbr30:before,.hrbr31:before{width:0%;height:4px;bottom:0px;top:auto}
+.hrbr10:hover:before,.hrbr13:hover:before,.hrbr12:hover:before,.hrbr15:hover:before{width:100%}
+.hrbr11:before,.hrbr14:before{left:50%;right:50%;width:auto}
+.hrbr11:hover:before,.hrbr14:hover:before{left:0px;right:0px}
+.hrbr13:before,.hrbr14:before,.hrbr15:before{bottom:auto}
+.hrbr12:before,.hrbr15:before{left:auto;right:0px}
+.hrbr16:before,.hrbr26:before,.hrbr27:before,.hrbr29:before{height:0%;width:4px}
+.hrbr26:before,.hrbr29:before{top:auto;bottom:0px}
+.hrbr27:before,.hrbr28:before,.hrbr29:before,.hrbr31:before{right:0px;left:auto}
+.hrbr25:before,.hrbr28:before{width:4px;top:50%;bottom:50%}
+.hrbr28:hover:before,.hrbr25:hover:before{top:0px;bottom:0px}
+.hrbr29:hover:before,.hrbr16:hover:before,.hrbr26:hover:before,.hrbr27:hover:before,.hrbr30:before,.hrbr31:before{height:100%}
+.hrbr17:before,.hrbr18:before{width:100%;height:0px}
+.hrbr17:hover:before,.hrbr18:hover:before{height:4px}
+.hrbr30:hover:before,.hrbr31:hover:before{width:4px;top:0px;bottom:auto}
