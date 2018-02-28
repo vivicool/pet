@@ -65,12 +65,47 @@
 </script>
 
 <style>
-/*栏目栅栏*/
-@media(max-width:768px) {
-    .column{
-        display:none;
+
+/*栏目10格栅栏*/
+.col-xs-10ths,
+.col-sm-10ths,
+.col-md-10ths,
+.col-lg-10ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media(max-width:767px) {
+    .col-sm-10ths {
+        width: 20%;
+        float: left;
+       
     }
 }
+
+@media ( min-width: 768px) {
+    .col-sm-10ths {
+        width: 10%;
+        float: left;
+    }
+}
+
+@media ( min-width: 992px) {
+    .col-md-10ths {
+        width: 10%;
+        float: left;
+    }
+}
+
+@media ( min-width: 1200px) {
+    .col-lg-10ths {
+        width: 10%;
+        float: left;
+    }
+}
+
 
 </style>
 

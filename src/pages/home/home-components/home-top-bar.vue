@@ -9,7 +9,7 @@
             <div class="row pa l0 r0 b0 searchbox">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <div class="row mb10all">
+                    <div class="row mb15all">
                         <div class="col-sm-9">
                             <div class="pr br1000">
                                 <form action="#" method="get">
@@ -59,7 +59,6 @@
             }
         }
     }
-
 
 </script>
 

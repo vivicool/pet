@@ -54,7 +54,7 @@
         methods: {
             leftScroll () {
                  var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;    
-                 if(scrollTop >=500) {
+                 if(scrollTop >=400) {
                      this.show = true;                   
                  }else{
                      this.show = false;
