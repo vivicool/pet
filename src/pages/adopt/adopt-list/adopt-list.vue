@@ -2,15 +2,15 @@
     <div>
         <div class="container">
             <div class="row mtb50">
-               <div class="col-xs-8">
+               <div class="col-xs-6">
                    <div class="mlr10all mtb10all">
                         <a class="btn bdn on crw plr25 ptb6 bg43 fs16">不限宠物</a>
                         <a class="btn bc2 bss cr7 plr25 ptb6 bghr43 fs16">领养猫咪</a>
                         <a class="btn bc2 bss cr7 plr25 ptb6 bghr43 fs16">领养狗狗</a>
                    </div>
                </div>
-               <div class="col-xs-4">
-                   <div  class="cr7-a fs16 crhr43">
+               <div class="col-xs-6 clearfix">
+                   <div  class="cr7-a fs16 crhr43 fr">
                        <ul class="flall pr28all mtb10all">
                            <li>
                                <a href="" class="active">综合排序</a>   
@@ -35,7 +35,7 @@
                     <AdoptListObj :url="find.url" :position="find.position" :address="find.address" :content="find.content"></AdoptListObj>
                  </div>
             </div>
-             <SareListPageTurning></SareListPageTurning>                 
+             <SareListPageTurning></SareListPageTurning>               
         </div>          
     </div>
 </template>

@@ -9,7 +9,7 @@
                             <a class="btn bc2 bss cr7 plr25 ptb6 bghr43 fs16">猫咪视频</a>
                     </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-6 clearfix">
                     <div  class="cr7-a fs16 crhr43 fr">
                         <ul class="flall pr33all mtb10all">
                                 <li>
