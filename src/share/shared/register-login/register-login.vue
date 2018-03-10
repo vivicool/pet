@@ -3,13 +3,13 @@
         <div class=" w550px h320px bg0 pf l50 t50" style="z-index:10001;margin-left:-275px;margin-top:-110px">
             <ul class="tabs clearfix">
                 <li class="tac">
-                    <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="type='register'" :class="{'cur':curId===0}">注册</a> 
+                    <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="changeType('register')" :class="{'cur':curId===0}">注册</a> 
                 </li>
                 <li class="tac">
-                     <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="type='login'" :class="{'cur':curId===1}">登录</a>
+                     <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="changeType('login')" :class="{'cur':curId===1}">登录</a>
                 </li>
                 <li class="tac">
-                     <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="type='app'" :class="{'cur':curId===2}">下载APP</a>
+                     <a href="javascript:;" class="tac fs16 tab-link ptb10 wh100 db crw" @click="changeType('app')" :class="{'cur':curId===2}">下载APP</a>
                 </li>             
             </ul>
             <div class="cards">
@@ -137,6 +137,9 @@ export default {
     methods: {
         closePop(){
             this.$emit('closePopHalder');
+        },
+        changeType(newValue){
+            this.$emit('update:type', newValue)
         }
     }
 }
