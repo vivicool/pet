@@ -130,7 +130,7 @@ export default {
                     return 2;
                     break;
                 default:
-                    return 0;
+                    return 1;  
             }
         }
     },

@@ -44,7 +44,7 @@
                     </div>
                 </nav>                                           
         </div>     
-        <RegisterLogin :type="type" @closePopHalder="close" v-show="isShow"></RegisterLogin>   
+        <RegisterLogin :type.sync="type" @closePopHalder="close" v-show="isShow"></RegisterLogin>   
     </div>
 </template>
 
